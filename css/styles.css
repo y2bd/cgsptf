@@ -1,25 +1,111 @@
-html {
+* {
 	-webkit-font-smoothing: antialiased;
 }
 
-h1 {
-	display: block;
-	line-height: 5.9rem;
+h1 span, h2 span, h3 span, p span {
+	display: inline-block;
+	background: rgba(32, 38, 48, .75);
 	
-	font-family: 'Raleway', sans-serif;
-	
+	padding: 8px;
 	color: white;
 }
 
-h1 span {
-	background: rgba(0, 0, 0, .25);
+h2 {
+	font-size: 3rem;
 }
+
+h3 {
+	font-size: 2.3rem;
+}
+
 
 section {
 	padding: 8em 0 7em;
 }
 
+nav {
+	position: fixed;
+
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+
+	width: 100%;
+
+	padding: 24px 12px;
+
+	display: block;
+}
+
+nav div#floater {
+	float: right;
+	margin-right: 42px;
+}
+
+nav a {
+	color: white;
+	font-weight: 600;
+	font-size: 2rem;
+	text-decoration: none;
+	display: inline-block;
+
+	margin-left: 8px;
+	margin-bottom: 4px;
+	padding: 4px;
+
+	background: rgba(255, 255, 255, 0.1);
+}
+
+span.contactLabel {
+	min-width: 6.1rem;
+	margin-left: 0rem;
+	text-align: right;
+
+	display: inline-block;
+	background: inherit;
+	
+	padding: inherit;
+	color: inherit;
+}
+
+#contact p {
+	display: block;
+	margin-bottom: 1rem;
+}
+
 #hero {
-	background: rgb(128, 35, 75);
+	background: 
+		linear-gradient(
+		rgba(200, 65, 85, 0.45), 
+		rgba(200, 65, 85, 0.45)
+		),
+		url('../images/dark_embroidery.png');
+}
+
+#apps {
+	background: 
+		linear-gradient(
+		rgba(64, 124, 212, 0.45), 
+		rgba(64, 124, 212, 0.45)
+		),
+		url('../images/dark_embroidery.png');
+}
+
+#games {
+	background: 
+		linear-gradient(
+		rgba(15, 25, 45, 0.40), 
+		rgba(15, 25, 45, 0.40)
+		),
+		url('../images/games_c.png');
+		
+	background-position: center center;
+	background-size: cover;
+}
+
+#homeH, #gamesH, #appsH, #contactH {
+	display: inline-block;
+	position: relative;
+
+	top: -12rem;
 }
 
